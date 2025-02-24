@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <h1>
+      Spli <br />
+      tter
+    </h1>
+    <main class="main">
+      <section class="bill">
+        <div class="bill-input-container">
+          <label class="label-bill">Bill</label>
+          <div class="input-dollar-sign">
+            <input class="input-bill" type="text" placeholder=" 0" value="0" />
+          </div>
+        </div>
+        <div class="select-tip">
+          <label>Select Tip %</label>
+          <div class="tip-percentages">
+            <button class="percentages">5%</button>
+            <button class="percentages">10%</button>
+            <button class="percentages active">15%</button>
+            <button class="percentages">25%</button>
+            <button class="percentages">50%</button>
+            <button class="custom percentages">Custom</button>
+          </div>
+        </div>
+        <div class="number-of-people">
+          <label>Number of People</label>
+          <div class="input-people-sign">
+            <input class="input-people" type="text" placeholder="0" />
+          </div>
+        </div>
+      </section>
+      <section class="tip">
+        <div class="tip-container">
+          <div class="tip-amount">
+            <p class="tip-amount-label">
+              Tip Amount <br />
+              <span>/ person</span>
+            </p>
+            <p class="tip-amount-value dollar">$0.00</p>
+          </div>
+          <div class="total">
+            <p class="total-label">
+              Total <br />
+              <span>/ person</span>
+            </p>
+            <p class="total-value dollar">$0.00</p>
+          </div>
+        </div>
+        <button class="reset">Reset</button>
+      </section>
+    </main>
+  </body>
+</html>
