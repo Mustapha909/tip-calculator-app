@@ -56,7 +56,6 @@ label {
 input {
   width: 100%;
   background-color: hsl(189, 41%, 97%);
-  color: hsl(183, 100%, 15%);
   border: none;
   border-radius: 5px;
   outline: none;
@@ -86,7 +85,9 @@ input {
 }
 
 .input-people-sign::before {
-  content: '👤';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  content: '\f007';
   position: absolute;
   left: 10px;
   top: 50%;
